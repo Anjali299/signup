@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Contact_Us</string>
+    <string name="send">SEND</string>
+    <string name="already_registered_connect">ALREADY REGISTERED, CONNECT</string>
+</resources>

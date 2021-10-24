@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Sign_up">
+
+
+    <LinearLayout
+        android:layout_width="460dp"
+        android:layout_height="860dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="SIGNUP"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="417dp"
+            android:layout_height="416dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="0dp">
+
+                <EditText
+                    android:id="@+id/firstname_subs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_btn"
+                    android:ems="10"
+                    android:hint="First name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/phone_subs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_btn"
+                    android:ems="10"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:paddingLeft="15dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/email_insc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_btn"
+                android:ems="10"
+                android:hint="Mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password_subs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_btn"
+                android:ems="10"
+                android:hint="  Password"
+                android:inputType="textPassword"
+                android:paddingRight="20dp"
+                android:textColor="#121111"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password_conf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_btn"
+                android:ems="10"
+                android:hint="  Confirm the Password"
+                android:inputType="textPassword"
+                android:paddingRight="15dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/gradient_btn"
+                android:text="SEND"
+                android:textColor="#1E1C1C"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@android:color/system_accent1_100"/>
+
+
+
+            <Button
+                android:id="@+id/i_have_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/gradient_btn"
+                app:backgroundTint="@android:color/system_accent1_100"
+                android:text="@string/already_registered_connect"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
